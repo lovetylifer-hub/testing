@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu | Deja Brew</title>
+<meta name="description" content="The Deja Brew menu: coffee, matcha and other beverages.">
+<meta name="theme-color" content="#FCC1DE">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/images/logo-mark.png">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="awning" aria-hidden="true"></div>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Deja Brew home"><img src="assets/images/logo-mark.png" alt="">Deja Brew</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav aria-label="Main"><ul class="nav" id="site-nav"><li><a href="index.html"><img src="assets/images/star-pink-dots.png" alt="">Home</a></li><li><a href="menu.html" aria-current="page"><img src="assets/images/teacup-rose.png" alt="">Menu</a></li><li><a href="about.html"><img src="assets/images/heart-bow.png" alt="">About</a></li><li><a href="promotions.html"><img src="assets/images/bow-dots.png" alt="">Promotions</a></li><li><a href="gallery.html"><img src="assets/images/frame-oval.png" alt="">Gallery</a></li><li><a href="contact.html"><img src="assets/images/kiss.png" alt="">Contact</a></li></ul></nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="wrap"><img class="stk " src="assets/images/teacups-stack.png" alt="" style="width:110px;left:5%;top:30px"><img class="stk " src="assets/images/bow-gingham.png" alt="" style="width:100px;right:6%;top:40px;transform:rotate(10deg)"><h1 style="font-size:clamp(2.8rem,8vw,5.2rem)">The Menu</h1><img class="divider" src="assets/images/ribbon-squiggle.png" alt=""><p>Pick a category, or browse the whole scrapbook. Prices will be added soon.</p></div></section><section class="section" style="padding-top:0"><div class="wrap">
+  <div class="filters" role="group" aria-label="Menu categories">
+    <button type="button" data-filter="all" aria-pressed="true">All</button>
+    <button type="button" data-filter="coffee" aria-pressed="false">Coffee</button>
+    <button type="button" data-filter="matcha" aria-pressed="false">Matcha</button>
+    <button type="button" data-filter="other" aria-pressed="false">Other beverages</button>
+  </div>
+  <section class="menu-cat" data-cat="coffee"><h2><img src="assets/images/doodle-cup-striped.png" alt="">Coffee</h2>
+    <div class="menu-grid"><article class="menu-item" id="egg-coffee"><figure class="polaroid"><span class="badge">Our<br>fave</span><div class="ph"><img src="assets/images/drink-egg-coffee.png" alt="Egg Coffee"></div></figure><h3>Egg Coffee</h3><p>Rich coffee crowned with a silky, golden egg cream. Dessert in a cup.</p><span class="price-tag">Price coming soon</span></article><article class="menu-item" id="caramel-macchiato"><figure class="polaroid"><span class="badge">Our<br>fave</span><div class="ph"><img src="assets/images/drink-caramel-macchiato.png" alt="Caramel Macchiato"></div></figure><h3>Caramel Macchiato</h3><p>Layers of espresso, milk and caramel, poured the slow, pretty way.</p><span class="price-tag">Price coming soon</span></article><article class="menu-item menu-item--empty"><figure class="polaroid"><div class="ph"><img src="assets/images/star-pink-dots.png" alt="" style="width:40%;height:auto"></div></figure><h3>Your next coffee</h3><p>Add a drink here: copy this block in menu.html.</p><span class="price-tag">Price coming soon</span></article></div></section>
+  <section class="menu-cat" data-cat="matcha"><h2><img src="assets/images/teacup-rose.png" alt="">Matcha</h2>
+    <div class="menu-grid"><article class="menu-item" id="sea-salt-matcha"><figure class="polaroid"><span class="badge">Our<br>fave</span><div class="ph"><img src="assets/images/drink-sea-salt-matcha.png" alt="Sea Salt Matcha"></div></figure><h3>Sea Salt Matcha</h3><p>Ceremonial-style matcha finished with a whisper of sea salt for a sweet-salty sip.</p><span class="price-tag">Price coming soon</span></article><article class="menu-item" id="matcha-latte"><figure class="polaroid"><span class="badge">Our<br>fave</span><div class="ph"><img src="assets/images/drink-matcha-latte.png" alt="Matcha Latte"></div></figure><h3>Matcha Latte</h3><p>Smooth, earthy matcha whisked into velvety milk. Soft, green and comforting.</p><span class="price-tag">Price coming soon</span></article><article class="menu-item menu-item--empty"><figure class="polaroid"><div class="ph"><img src="assets/images/star-pink-dots.png" alt="" style="width:40%;height:auto"></div></figure><h3>Your next matcha</h3><p>Add a drink here: copy this block in menu.html.</p><span class="price-tag">Price coming soon</span></article></div></section>
+  <section class="menu-cat" data-cat="other"><h2><img src="assets/images/doodle-cup-stars.png" alt="">Other beverages</h2>
+    <div class="menu-grid"><article class="menu-item menu-item--empty"><figure class="polaroid"><div class="ph"><img src="assets/images/star-pink-dots.png" alt="" style="width:40%;height:auto"></div></figure><h3>Beverage name</h3><p>Add a drink here: copy this block in menu.html.</p><span class="price-tag">Price coming soon</span></article><article class="menu-item menu-item--empty"><figure class="polaroid"><div class="ph"><img src="assets/images/star-pink-dots.png" alt="" style="width:40%;height:auto"></div></figure><h3>Beverage name</h3><p>Add a drink here: copy this block in menu.html.</p><span class="price-tag">Price coming soon</span></article></div></section>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <img src="assets/images/logo-mark.png" alt="" style="width:90px;margin-bottom:.4rem;filter:brightness(1.6) saturate(.8)">
+      <div class="foot-brand">Deja Brew</div>
+      <p class="foot-tag">A Feeling Worth Repeating.</p>
+    </div>
+    <div>
+      <h3>Wander</h3>
+      <ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="promotions.html">Promotions</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </div>
+    <div>
+      <h3>Say hello</h3>
+      <ul>
+        <li><a href="contact.html">Find us &amp; contact</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap copy">&copy; <span id="yr">2026</span> Deja Brew. All rights reserved.</div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
